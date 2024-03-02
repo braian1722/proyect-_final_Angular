@@ -1,0 +1,105 @@
+{
+  "usuarios": [
+    {
+      "id": "2",
+      "firstName": "Sasuke",
+      "lastName": "Uchiha",
+      "email": "sasu@mail.com",
+      "password": "123",
+      "role": "ADMIN",
+      "token": "ab3drthdkd2"
+    },
+    {
+      "id": "4",
+      "firstName": "Sasuke",
+      "lastName": "Uchiha",
+      "email": "sa@mail.com",
+      "password": "123",
+      "role": "ADMIN",
+      "token": "ab3drthdfsdfsdkd2"
+    },
+    {
+      "id": "86asad5",
+      "firstName": "Braian",
+      "lastName": "kandyba",
+      "email": "b@gmail.com",
+      "password": "AB123456",
+      "role": "ESTUDIANTES",
+      "token": "33drthdfsdfsdkd2"
+    },
+    {
+      "id": "8d5",
+      "firstName": "julian",
+      "lastName": "jimenes",
+      "email": "basda@gmail.com",
+      "password": "AB123456",
+      "role": "ESTUDIANTES",
+      "token": "ab1sdkd2"
+    },
+    {
+      "id": "ad60",
+      "firstName": "GERO",
+      "lastName": "NIMO",
+      "email": "ger@gamsd.com",
+      "password": "1234dasda",
+      "role": "ESTUDIANTES"
+    },
+    {
+      "id": "d5b3",
+      "firstName": "Braian",
+      "lastName": "Ivan",
+      "email": "fs34@gmial.com",
+      "password": "Scas12356",
+      "role": "USER"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "1",
+      "name": "Matemáticas",
+      "turno": "Mañana",
+      "diasCursada": "Lunes y Miércoles",
+      "fechaInicio": "2024-02-20"
+    },
+    {
+      "id": "2",
+      "name": "Lengua",
+      "turno": "Tarde",
+      "diasCursada": "Martes y Jueves",
+      "fechaInicio": "2024-02-21"
+    },
+    {
+      "id": "3",
+      "name": "Programación",
+      "turno": "Noche",
+      "diasCursada": "Lunes y Viernes",
+      "fechaInicio": "2024-02-22"
+    },
+    {
+      "id": "739a",
+      "name": "Informatica",
+      "turno": "tarde",
+      "diasCursada": "martes y jueves",
+      "fechaInicio": "2024-08-01"
+    },
+    {
+      "id": "e669",
+      "name": "Base de Datos 1",
+      "turno": "mañana",
+      "diasCursada": "lunes y martes",
+      "fechaInicio": "2024-05-12"
+    }
+  ],
+  "inscripciones": [
+    {
+      "id": "cfe7",
+      "usuarioId": "86asad5",
+      "cursoId": "2"
+    },
+    {
+      "id": "4738",
+      "usuarioId": "8d5",
+      "cursoId": "3"
+    }
+  ]
+}

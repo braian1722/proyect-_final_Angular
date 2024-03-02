@@ -1,0 +1,70 @@
+<mat-drawer-container class="dashboard-container" autosize>
+
+    <mat-drawer #drawer class="dashboard-sidenav" mode="side">
+    <mat-nav-list>
+    
+            <a
+            #homeLink="routerLinkActive"
+            routerLinkActive
+            [activated]="homeLink.isActive"
+            routerLink="home"
+            mat-list-item>inicio</a>
+
+            <a  
+            #ususariosLink="routerLinkActive"
+            routerLinkActive
+            [activated]="ususariosLink.isActive "
+            routerLink="usuarios" mat-list-item>
+            usuarios</a>
+
+            <a  
+            #alumnosLink="routerLinkActive"
+            routerLinkActive
+            [activated]="alumnosLink.isActive "
+            routerLink="alumnos" mat-list-item>
+            alumnos</a>
+
+            <a  
+            #cursosLink="routerLinkActive"
+            routerLinkActive
+            [activated]="cursosLink.isActive "
+            routerLink="cursos" mat-list-item>
+            cursos</a>
+
+            <a  
+            #inscripcionesLink="routerLinkActive"
+            routerLinkActive
+            [activated]="inscripcionesLink.isActive "
+            routerLink="inscripciones" mat-list-item>
+            inscripciones</a>
+
+        <a (click)="logOut()" mat-list-item>Cerrar sesion</a> 
+
+    </mat-nav-list>
+
+    </mat-drawer> 
+
+    <div class="example-sidenav-content">
+        <mat-toolbar color="primary" >
+            <button
+            (click)="drawer.toggle()"
+            
+                mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Academia FA</span>
+            <span style="flex: 1"></span>
+            <div *ngIf="authUser$ | async; let user">
+                <span>{{ user.firstName }} {{ user.lastName }}</span>
+                <p class="m-0">{{ user.email }}</p>
+            </div>
+            <span class="example-spacer"></span>
+
+        </mat-toolbar>
+        <!-- clases de primeflex -->
+        <div class="p-3">
+            <router-outlet></router-outlet>
+        </div>
+        
+    </div>
+</mat-drawer-container>

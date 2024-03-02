@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Crear venta</h1>
+<div mat-dialog-content>
+    <form [formGroup]="inscripcionesForm" >
+        <mat-form-field>
+            <mat-label>Estudiantes</mat-label>
+            <mat-select formControlName="usuarioId">
+                <mat-option [value]="estudiante.id" *ngFor="let estudiante of estudiantes$ | async">
+                    {{estudiante.firstName}} {{estudiante.lastName}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Cursos</mat-label>
+            <mat-select formControlName="cursoId">
+                <mat-option
+                    [value]="curso.id"
+                    *ngFor="let curso of cursos$ | async"
+                >
+                    {{ curso.name }}</mat-option
+                >
+            </mat-select>
+        </mat-form-field>
+
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button (click)="onSubmit()" >Guardar</button>
+</div>
